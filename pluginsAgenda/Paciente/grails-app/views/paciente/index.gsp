@@ -24,16 +24,12 @@
 			<thead>
 					<tr>
 					
-						<g:sortableColumn property="apellidoMaterno" title="${message(code: 'paciente.apellidoMaterno.label', default: 'Apellido Materno')}" />
-					
 						<g:sortableColumn property="apellidoPaterno" title="${message(code: 'paciente.apellidoPaterno.label', default: 'Apellido Paterno')}" />
-					
-						<g:sortableColumn property="curp" title="${message(code: 'paciente.curp.label', default: 'Curp')}" />
-					
-						<th><g:message code="paciente.domicilio.label" default="Domicilio" /></th>
-					
-						<g:sortableColumn property="estadoCivil" title="${message(code: 'paciente.estadoCivil.label', default: 'Estado Civil')}" />
-					
+						
+						<g:sortableColumn property="apellidoMaterno" title="${message(code: 'paciente.apellidoMaterno.label', default: 'Apellido Materno')}" />
+																
+						<g:sortableColumn property="nombre" title="${message(code: 'paciente.nombre.label', default: 'Nombre')}" />
+				
 						<th><g:message code="paciente.expediente.label" default="Expediente" /></th>
 					
 					</tr>
@@ -42,17 +38,13 @@
 				<g:each in="${pacienteList}" status="i" var="paciente">
 					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">
 					
-						<td><g:link action="show" id="${paciente.id}">${fieldValue(bean: paciente, field: "apellidoMaterno")}</g:link></td>
+						<td><g:link action="show" id="${paciente.id}">${fieldValue(bean: paciente, field: "apellidoPaterno")}</g:link></td>
 					
-						<td>${fieldValue(bean: paciente, field: "apellidoPaterno")}</td>
+						<td>${fieldValue(bean: paciente, field: "apellidoMaterno")}</td>
 					
-						<td>${fieldValue(bean: paciente, field: "curp")}</td>
-					
-						<td>${fieldValue(bean: paciente, field: "domicilio")}</td>
-					
-						<td>${fieldValue(bean: paciente, field: "estadoCivil")}</td>
-					
-						<td>${fieldValue(bean: paciente, field: "expediente")}</td>
+						<td>${fieldValue(bean: paciente, field: "nombre")}</td>
+										
+						<td>${fieldValue(bean: paciente, field: "expediente.numeroExpediente")}</td>
 					
 					</tr>
 				</g:each>
