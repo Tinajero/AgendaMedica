@@ -27,6 +27,7 @@ environments {
 			
 			username = "root"
 			password = ""// Contraseña de la conexion a base de datos
+      // comentario de prueba
         }
     }
     test {
