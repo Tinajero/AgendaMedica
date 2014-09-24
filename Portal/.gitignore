@@ -14,4 +14,4 @@ target-eclipse/
 target/
 
 #data source 
-Portal/grails-app/conf/DataSource.groovy
+/Portal/grails-app/conf/DataSource.groovy
