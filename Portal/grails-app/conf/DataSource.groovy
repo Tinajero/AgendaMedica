@@ -19,13 +19,14 @@ hibernate {
 environments {
     development {
         dataSource {
-//            dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
-//            url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
-			dbCreate = "update"//"create"
-			url = "jdbc:mysql://localhost/agendamedica?useUnicode=yes&characterEncoding=UTF-8"
+//            dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', '' // comentado no lo usaremos
+//            url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE" // comentado no lo usaremos
+			dbCreate = "update"//"create" //update lo que hace es actualiza, create es borra todo si existe y crea de nuevo
+			url = "jdbc:mysql://localhost/agendamedica?useUnicode=yes&characterEncoding=UTF-8" 
+      //jdbc:mysql://localhost/BaseDeDatos?useUnicode=yes&characterEncoding=UTF-8" 
 			
 			username = "root"
-			password = "mirror09"
+			password = ""// Contraseña de la conexion a base de datos
         }
     }
     test {
