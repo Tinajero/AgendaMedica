@@ -13,3 +13,7 @@
 target-eclipse/
 target/
 
+
+# Data source para que cada quien lo modifique a su gusto 
+Portal/grails-app/conf/DataSource.groovy
+
