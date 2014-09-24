@@ -23,7 +23,8 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			    </button>
-			    <a class="navbar-brand" href="#">Agenda Medica</a>
+			    <a class="navbar-brand"  href="${createLink(uri: '/')}">Agenda Medica</a>
+			    
     		</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
@@ -37,9 +38,9 @@
 	  <div class="row">	
 	  	<div class="col-sm-3 col-md-2 sidebar">
 	  		 <ul class="nav nav-sidebar">
-	  		 	<li><a>Doctor</a></li>
-	  		 	<li><a>Citas</a></li>
-	  		 	<li><a>Pacientes</a></li>
+	  		 	<li><g:link controller="doctor">Doctor</g:link></li>
+<%--	  		 	<li><a>Citas</a></li>--%>
+	  		 	<li><g:link controller="paciente">Pacientes</g:link></li>
 	  		 	<li><a>Busqueda</a></li>
 	  		 </ul>
 	  	</div>
