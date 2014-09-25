@@ -26,7 +26,7 @@ environments {
       //jdbc:mysql://localhost/BaseDeDatos?useUnicode=yes&characterEncoding=UTF-8" 
 			
 			username = "root"
-			password = "mirror09"// Contraseña de la conexion a base de datos
+			password = ""// Contraseña de la conexion a base de datos
       // comentario de prueba otra ves de nuevo por tercera vez por cuarta vezpor quinta vez
         }
     }
