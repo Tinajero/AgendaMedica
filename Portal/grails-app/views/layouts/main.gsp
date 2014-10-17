@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
@@ -12,6 +13,8 @@
   <asset:stylesheet src="application.css"/>
   <g:layoutHead/>
 <%--    <r:layoutResources/>--%>
+		  <asset:javascript src="application.js"/>
+		  <g:javascript src="utilerias.js" />
 </head>
 <body>
 	<nav class="navbar navbar-default" role="navigation">
@@ -27,8 +30,8 @@
 			    
     		</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li><a>link</a></li>
+				<ul class="nav navbar-nav" id="contenedorNavbarPrincipal">
+<%--					<li><a>link</a></li>--%>
 					
 				</ul>
 			</div> <!-- ./nav-bar collapse -->
@@ -46,7 +49,7 @@
 	  	</div>
 	  	<div class="col-sm-9 col-md-10">
 		  <g:layoutBody/>
-		  <asset:javascript src="application.js"/>
+
 	<%--   <r:layoutResources/>--%>
 		</div>
 	  </div>

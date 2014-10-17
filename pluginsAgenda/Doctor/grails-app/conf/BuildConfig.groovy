@@ -49,6 +49,6 @@ grails.project.dependency.resolution = {
 			  compile ':scaffolding:2.1.2'
 			  compile ':asset-pipeline:1.8.11'
 			  runtime ':twitter-bootstrap:3.2.0.2'
-			  runtime ":resources:1.2.8"
+			
     }
 }
