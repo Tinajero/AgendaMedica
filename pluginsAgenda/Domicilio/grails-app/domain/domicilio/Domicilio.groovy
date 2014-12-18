@@ -1,6 +1,6 @@
 package domicilio
 /**
- * Clase Domicilio que alamacenara los domicilios del sistema
+ * Clase Domicilio que almacenara los domicilios del sistema
  * principalmente los domicilios del paciente
  * 
  * @author Daniel

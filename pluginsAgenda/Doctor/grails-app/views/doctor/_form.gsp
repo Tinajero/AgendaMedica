@@ -7,7 +7,7 @@
 		<g:message code="doctor.apellidoMaterno.label" default="Apellido Materno" />
 		
 	</label>
-	<g:textField name="apellidoMaterno" value="${doctor?.apellidoMaterno}" />
+	<g:textField name="apellidoMaterno" value="${doctor?.apellidoMaterno}" class='alphaonly' />
 
 </div>
 
@@ -16,7 +16,7 @@
 		<g:message code="doctor.apellidoPaterno.label" default="Apellido Paterno" />
 		
 	</label>
-	<g:textField name="apellidoPaterno" value="${doctor?.apellidoPaterno}" />
+	<g:textField name="apellidoPaterno" value="${doctor?.apellidoPaterno}" class='alphaonly'/>
 
 </div>
 
@@ -34,7 +34,7 @@
 		<g:message code="doctor.nombre.label" default="Nombre" />
 		
 	</label>
-	<g:textField name="nombre" value="${doctor?.nombre}" />
+	<g:textField name="nombre" value="${doctor?.nombre}" class='alphaonly'/>
 
 </div>
 

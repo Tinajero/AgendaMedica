@@ -60,6 +60,7 @@
 		</div>
 		<script>
 			$(document).ready( setNavBarLista() );
+			$(document).ready( validateClassAlphaonly() );
 		</script>
 	</body>
 </html>

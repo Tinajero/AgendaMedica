@@ -9,7 +9,7 @@
 <!--<![endif]-->
 
 <head>
-  <title><g:layoutTitle default="Grails"/></title>
+  <title>Hospital General</title>
   <asset:stylesheet src="application.css"/>
   <g:layoutHead/>
 <%--    <r:layoutResources/>--%>
