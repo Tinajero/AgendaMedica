@@ -47,3 +47,12 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: doctor, field: 'tipodeCita', 'error')} ">
+	<label for="tipodeCita">
+		<g:message code="doctor.tipodeCita.label" default="Tipode Cita" />
+		
+	</label>
+	<g:select name="tipodeCita"  from="${catalogocita.Catalogocita.list()}" multiple="multiple" optionValue='nombre' optionKey="id" size="5" required="" value="${doctor?.tipodeCita*.id}" class="many-to-many"/>
+
+</div>
+

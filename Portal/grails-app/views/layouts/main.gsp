@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
@@ -8,10 +9,12 @@
 <!--<![endif]-->
 
 <head>
-  <title><g:layoutTitle default="Grails"/></title>
+  <title>Hospital General</title>
   <asset:stylesheet src="application.css"/>
   <g:layoutHead/>
 <%--    <r:layoutResources/>--%>
+		  <asset:javascript src="application.js"/>
+		  <g:javascript src="utilerias.js" />
 </head>
 <body>
 	<nav class="navbar navbar-default" role="navigation">
@@ -23,11 +26,12 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			    </button>
-			    <a class="navbar-brand" href="#">Agenda Medica</a>
+			    <a class="navbar-brand"  href="${createLink(uri: '/')}">Agenda Medica</a>
+			    
     		</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li><a>link</a></li>
+				<ul class="nav navbar-nav" id="contenedorNavbarPrincipal">
+<%--					<li><a>link</a></li>--%>
 					
 				</ul>
 			</div> <!-- ./nav-bar collapse -->
@@ -37,15 +41,15 @@
 	  <div class="row">	
 	  	<div class="col-sm-3 col-md-2 sidebar">
 	  		 <ul class="nav nav-sidebar">
-	  		 	<li><a>Doctor</a></li>
-	  		 	<li><a>Citas</a></li>
-	  		 	<li><a>Pacientes</a></li>
+	  		 	<li><g:link controller="doctor">Doctor</g:link></li>
+<%--	  		 	<li><a>Citas</a></li>--%>
+	  		 	<li><g:link controller="paciente">Pacientes</g:link></li>
 	  		 	<li><a>Busqueda</a></li>
 	  		 </ul>
 	  	</div>
 	  	<div class="col-sm-9 col-md-10">
 		  <g:layoutBody/>
-		  <asset:javascript src="application.js"/>
+
 	<%--   <r:layoutResources/>--%>
 		</div>
 	  </div>
