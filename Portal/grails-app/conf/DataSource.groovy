@@ -25,7 +25,7 @@ environments {
 			url = "jdbc:mysql://localhost/agendamedica?useUnicode=yes&characterEncoding=UTF-8"
 			
 			username = "root"
-			password = ""
+			password = "mirror09"
         }
     }
     test {

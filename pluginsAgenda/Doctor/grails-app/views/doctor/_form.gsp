@@ -7,7 +7,7 @@
 		<g:message code="doctor.apellidoMaterno.label" default="Apellido Materno" />
 		
 	</label>
-	<g:textField name="apellidoMaterno" value="${doctor?.apellidoMaterno}" class='alphaonly' />
+	<g:textField name="apellidoMaterno" value="${doctor?.apellidoMaterno}" />
 
 </div>
 
@@ -16,7 +16,7 @@
 		<g:message code="doctor.apellidoPaterno.label" default="Apellido Paterno" />
 		
 	</label>
-	<g:textField name="apellidoPaterno" value="${doctor?.apellidoPaterno}" class='alphaonly'/>
+	<g:textField name="apellidoPaterno" value="${doctor?.apellidoPaterno}" />
 
 </div>
 
@@ -34,7 +34,7 @@
 		<g:message code="doctor.nombre.label" default="Nombre" />
 		
 	</label>
-	<g:textField name="nombre" value="${doctor?.nombre}" class='alphaonly'/>
+	<g:textField name="nombre" value="${doctor?.nombre}" />
 
 </div>
 
@@ -44,6 +44,15 @@
 		
 	</label>
 	<g:textField name="sexo" value="${doctor?.sexo}" />
+
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: doctor, field: 'tipodeCita', 'error')} ">
+	<label for="tipodeCita">
+		<g:message code="doctor.tipodeCita.label" default="Tipode Cita" />
+		
+	</label>
+	<g:select name="tipodeCita"  from="${catalogocita.Catalogocita.list()}" multiple="multiple" optionValue='nombre' optionKey="id" size="5" required="" value="${doctor?.tipodeCita*.id}" class="many-to-many"/>
 
 </div>
 
