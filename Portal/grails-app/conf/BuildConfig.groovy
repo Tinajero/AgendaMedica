@@ -10,6 +10,8 @@ grails.plugin.location."Doctor"="../pluginsAgenda/Doctor"
 grails.plugin.location."Expediente"="../pluginsAgenda/Expediente"
 grails.plugin.location."Pacienter"="../pluginsAgenda/Paciente"
 grails.plugin.location."Domicilio"="../pluginsAgenda/Domicilio"
+grails.plugin.location."Cita"="../pluginsAgenda/Cita"
+grails.plugin.location."HojaRegistro"="../pluginsAgenda/HojaRegistro"
 
 grails.project.fork = [
     // configure settings for compilation JVM, note that if you alter the Groovy version forked compilation is required
@@ -62,10 +64,12 @@ grails.project.dependency.resolution = {
         build ":tomcat:7.0.54"
 
         // plugins for the compile step
+        //compile ":searchable:0.6.9"
         compile ":scaffolding:2.1.2"
         compile ':cache:1.1.7'
         compile ":asset-pipeline:1.8.11"
-
+		//añadiendo boostrap
+		compile ':twitter-bootstrap:3.2.0.2'
         // plugins needed at runtime but not for compilation
         runtime ":hibernate4:4.3.5.4" // or ":hibernate:3.6.10.16"
         runtime ":database-migration:1.4.0"
