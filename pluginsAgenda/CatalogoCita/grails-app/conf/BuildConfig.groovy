@@ -1,7 +1,6 @@
 grails.project.class.dir = "target/classes"
 grails.project.test.class.dir = "target/test-classes"
 grails.project.test.reports.dir = "target/test-reports"
-grails.plugin.location."CatalogoCita"="../CatalogoCita"
 
 grails.project.fork = [
     // configure settings for compilation JVM, note that if you alter the Groovy version forked compilation is required
@@ -45,11 +44,5 @@ grails.project.dependency.resolution = {
               ":rest-client-builder:1.0.3") {
             export = false
         }
-			  build ':tomcat:7.0.54'
-			  compile ':cache:1.1.7'
-			  compile ':scaffolding:2.1.2'
-			  compile ':asset-pipeline:1.8.11'
-			  runtime ':twitter-bootstrap:3.2.0.2'
-			
     }
 }

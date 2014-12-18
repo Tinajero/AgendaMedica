@@ -42,7 +42,8 @@ class Paciente {
 							"Casado/a",
 							"Divorciado/a",
 							"Viudo/a",
-							"Separado/a"
+							"Separado/a",
+							"Union libre"
 			])
 		
 		curp ( matches:"[A-Za-z]{4}[0-9]{6}[H,M][A-Za-z]{5}[0-9]{2}")
