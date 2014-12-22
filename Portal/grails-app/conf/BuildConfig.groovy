@@ -8,8 +8,9 @@ grails.project.source.level = 1.6
 //grails.project.war.file = "target/${appName}-${appVersion}.war"
 grails.plugin.location."Doctor"="../pluginsAgenda/Doctor"
 grails.plugin.location."Expediente"="../pluginsAgenda/Expediente"
-grails.plugin.location."Pacienter"="../pluginsAgenda/Paciente"
+grails.plugin.location."Paciente"="../pluginsAgenda/Paciente"
 grails.plugin.location."Domicilio"="../pluginsAgenda/Domicilio"
+grails.plugin.location."Cita"="../pluginsAgenda/Cita"
 
 grails.project.fork = [
     // configure settings for compilation JVM, note that if you alter the Groovy version forked compilation is required
@@ -60,7 +61,7 @@ grails.project.dependency.resolution = {
     plugins {
         // plugins for the build system only
         build ":tomcat:7.0.54"
-
+		
         // plugins for the compile step
         compile ":scaffolding:2.1.2"
         compile ':cache:1.1.7'

@@ -44,6 +44,7 @@
 	  		 	<li><g:link controller="doctor">Doctor</g:link></li>
 <%--	  		 	<li><a>Citas</a></li>--%>
 	  		 	<li><g:link controller="paciente">Pacientes</g:link></li>
+	  		 	<li><g:link controller="cita">Citas</g:link></li>
 	  		 	<li><a>Busqueda</a></li>
 	  		 </ul>
 	  	</div>
