@@ -11,6 +11,7 @@ grails.plugin.location."Expediente"="../pluginsAgenda/Expediente"
 grails.plugin.location."Paciente"="../pluginsAgenda/Paciente"
 grails.plugin.location."Domicilio"="../pluginsAgenda/Domicilio"
 grails.plugin.location."Cita"="../pluginsAgenda/Cita"
+grails.plugin.location."HojaRegistro"="../pluginsAgenda/HojaRegistro"
 
 grails.project.fork = [
     // configure settings for compilation JVM, note that if you alter the Groovy version forked compilation is required
